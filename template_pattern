@@ -1,0 +1,65 @@
+PATTERN_TEMPLATE = """
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{title}</title>
+    <meta name="description" content="{description}">
+
+    <style>
+        body {{
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            line-height: 1.6;
+        }}
+        .meta {{
+            background: #f5f5f5;
+            padding: 10px;
+            margin: 20px 0;
+        }}
+        img {{
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+        }}
+        .btn {{
+            display: inline-block;
+            padding: 10px 15px;
+            background: black;
+            color: white;
+            text-decoration: none;
+            margin-top: 20px;
+        }}
+        .tags {{
+            font-size: 0.9em;
+            color: #555;
+        }}
+    </style>
+</head>
+
+<body>
+
+    <h1>{title}</h1>
+
+    <img src="../assets/images/{image}" alt="{title}">
+
+    <div class="meta">
+        <p><strong>Era:</strong> {era}</p>
+        <p><strong>Garment:</strong> {garment}</p>
+        <p><strong>Publisher:</strong> {publisher}</p>
+        <p><strong>Pattern Number:</strong> {pattern_number}</p>
+    </div>
+
+    <p>{description}</p>
+
+    <p class="tags"><strong>Tags:</strong> {tags}</p>
+
+    <a class="btn" href="{payhip_url}" target="_blank">
+        Download on Payhip
+    </a>
+
+</body>
+</html>
+"""
