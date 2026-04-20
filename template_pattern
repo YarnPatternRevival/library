@@ -1,4 +1,4 @@
-PATTERN_TEMPLATE = """
+TEMPLATE_PATTERN = """
 <!DOCTYPE html>
 <html>
 <head>
