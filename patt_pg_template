@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{title}} | YPR</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>{{title}}</h1>
+
+    <div class="nav">
+        <a href="../era/{{era_slug}}.html">{{era}}</a>
+        <a href="../garment/{{garment_slug}}.html">{{garment}}</a>
+        <a href="../publisher/{{publisher_slug}}.html">{{publisher}}</a>
+    </div>
+
+    <img class="pattern-image" src="../assets/images/{{image}}">
+
+    <div class="description">
+        {{description}}
+    </div>
+
+    <a class="button" href="{{payhip_url}}">Download Pattern</a>
+
+    <div class="related">
+        <h2>Related Patterns</h2>
+        {{related_html}}
+    </div>
+
+</div>
+
+</body>
+</html>
