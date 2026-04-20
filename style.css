@@ -1,0 +1,125 @@
+:root {
+    /* Background + text (Payhip-like neutral palette) */
+    --bg: #fbfaf7;
+    --text: #1a1a1a;
+    --muted: #6b6b6b;
+    --border: #e7e1d8;
+
+    /* Accent (very Payhip-style near-black) */
+    --accent: #111111;
+
+    /* Typography */
+    --font-heading: Georgia, "Times New Roman", serif;
+    --font-body: Georgia, serif;
+    --font-ui: Arial, Helvetica, sans-serif;
+
+    /* Layout */
+    --max-width: 900px;
+}
+
+/* BASE */
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    line-height: 1.65;
+}
+
+/* LAYOUT */
+.container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 28px 20px;
+}
+
+/* TYPOGRAPHY */
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    font-weight: normal;
+    letter-spacing: 0.2px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+/* LINKS */
+a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* BUTTON (Payhip CTA style) */
+.button {
+    display: inline-block;
+    padding: 12px 16px;
+    background: var(--accent);
+    color: white;
+    border-radius: 4px;
+    font-family: var(--font-ui);
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+.button:hover {
+    opacity: 0.85;
+}
+
+/* IMAGE STYLE (very Payhip-like) */
+.pattern-image {
+    width: 100%;
+    max-width: 600px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    margin: 18px 0;
+}
+
+/* NAV / CATEGORY LINKS */
+.nav {
+    margin: 14px 0 20px;
+    font-size: 13px;
+    color: var(--muted);
+}
+
+.nav a {
+    margin-right: 10px;
+    color: var(--muted);
+}
+
+.nav a:hover {
+    color: var(--text);
+}
+
+/* PRODUCT TEXT BLOCK */
+.description {
+    font-size: 15px;
+    color: var(--text);
+    max-width: 650px;
+}
+
+/* RELATED SECTION */
+.related {
+    margin-top: 40px;
+    border-top: 1px solid var(--border);
+    padding-top: 20px;
+}
+
+.related ul {
+    padding-left: 18px;
+}
+
+.related li {
+    margin-bottom: 6px;
+    font-size: 14px;
+}
