@@ -1,0 +1,29 @@
+HOME_TEMPLATE = """
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yarn Pattern Revival</title>
+    <style>
+        body {{
+            font-family: Arial;
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }}
+        a {{
+            display: block;
+            margin: 8px 0;
+        }}
+    </style>
+</head>
+<body>
+
+<h1>Yarn Pattern Revival</h1>
+
+<h2>Browse Patterns</h2>
+
+{links}
+
+</body>
+</html>
+"""
